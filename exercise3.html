@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					var img = $("img");
+					img.animate({width: '+=100px', opacity: '0.5'}, "slow");
+					img.animate({height: '+=100px', opacity: '1'}, "slow");
+					img.animate({width: '-=100px', opacity: '0.5'}, "slow");
+					img.animate({height: '-=100px', opacity: '1'}, "slow");
+					
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>Click me!</button><br>
+		<img src = ".\pic\url.jpg">
+	</body>
+</html>
